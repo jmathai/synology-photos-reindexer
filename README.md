@@ -39,6 +39,8 @@ export SYNO_HOSTNAME=<your synology hostname or ip address>
 
 ### Run the script.
 
+You may see some errors about an `InsecureRequestWarning` which can be ignored.
+
 ```
 ./main.py
 ```

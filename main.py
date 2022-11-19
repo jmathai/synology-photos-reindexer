@@ -26,7 +26,8 @@ def login():
 
 def reindex(sid):
     res_reindex = call_api('SYNO.Foto.Index', 'reindex', '1', _sid=sid)
-    if('data' not in res_reindex):
+    res_reindex_json = res_reindex.json()
+    if('success' not in res_reindex_json):
         exit('Reindex failed')
 
     return True
