@@ -2,6 +2,8 @@
 
 Simple script to call Synology Photo's reindex API that can be scheduled to run periodically.
 
+*The CLI commands did not work for me, unfortunately.*
+
 ## Instructions
 
 ### Clone the repository.
