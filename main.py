@@ -32,6 +32,13 @@ def reindex(sid):
 
     return True
 
+def logout():
+    res_logout = call_api('SYNO.API.Auth', 'logout', '3')
+    res_logout_json = res_logout.json()
+    if('success' not in res_logout_json):
+        print('Logout failed')
+
+
 
 if(__name__ == '__main__'):
     if('SYNO_HOSTNAME' not in os.environ):
@@ -43,4 +50,5 @@ if(__name__ == '__main__'):
 
     login_sid = login()
     res_reindex = reindex(login_sid)
+    logout()
     print('Reindexed successfully')
