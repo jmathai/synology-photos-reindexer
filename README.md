@@ -56,9 +56,9 @@ From the Task Scheduler click Create -> Scheduled Task -> User defined script.
 On the Task Settings tab you'll use the following commands from above customized with your values.
 
 ```
-export SYNO_USERNAME=<your synology username>
-export SYNO_PASSWORD=<your synology password>
-export SYNO_HOSTNAME=<your synology hostname or ip address>
+export SYNO_USERNAME='<your synology username>'
+export SYNO_PASSWORD='<your synology password>'
+export SYNO_HOSTNAME='<your synology hostname or ip address>'
 cd <path to git repo>
 source .env/bin/activate
 ./main.py
